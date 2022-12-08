@@ -1,0 +1,47 @@
+.contact {
+    font-family: 'roboto';
+    display: flex;
+    margin-left: auto;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact  {
+    color: #757575 ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    
+    fill: currentColor;
+}
+.contact__tel {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__mail{
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contact .contact :hover,
+.contact .contact :focus {
+    color: #2196F3;
+}
+.contact__mail:hover ,
+.contact__mail:focus  {
+    fill: currentColor;
+}
