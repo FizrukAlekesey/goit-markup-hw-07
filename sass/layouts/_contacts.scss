@@ -6,6 +6,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: #2196F3;
+        }
 }
 .contact  {
     color: #757575 ;
@@ -31,17 +35,16 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover ,
+        &:focus  {
+        fill: currentColor;
+    }
+
 }
 
 .contact__item:not(:last-child){
     margin-right: 50px;
 }
 
-.contact .contact :hover,
-.contact .contact :focus {
-    color: #2196F3;
-}
-.contact__mail:hover ,
-.contact__mail:focus  {
-    fill: currentColor;
-}
+
+

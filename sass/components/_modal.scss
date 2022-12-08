@@ -45,11 +45,12 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     fill: #000000;
+        &:focus,
+        &:hover{
+        fill: #2196F3;
+        }
 }
-.icon-close:focus,
-.icon-close:hover{
-    fill: #2196F3;
-}
+
 
 .modal-btd{
     position: absolute;
@@ -102,18 +103,15 @@
     transition-property:color, background-color, box-shadow ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover{
+        outline:1px solid #188CE8; 
+        border: transparent;
+        }
 }
 
-.form-input:focus,
-.form-input:hover{
-    outline:1px solid #188CE8; 
-    border: transparent;
-    
-}
-.form-input:focus + .icon-form,
-.form-input:hover + .icon-form{
-    fill: #188CE8;
-}
+
+
 
 .icon-form{
     position: absolute;
@@ -124,7 +122,10 @@
     width: 18px;
     height: 18px;
     fill: #000000;
-    
+        .form-input:focus + &,
+        .form-input:hover + &{
+        fill: #188CE8;
+    }
 }
 
 .form-field label {
@@ -156,12 +157,12 @@
     resize: none;
     border:1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+        &:focus,
+        &:hover{
+        outline:1px solid #188CE8; 
+    }
+}
 
-}
-.comment:focus,
-.comment:hover{
-    outline:1px solid #188CE8; 
-}
 
 .topic-text{ 
     display: flex;
@@ -195,16 +196,7 @@
 
 }
 
-.checkbox:checked + .checkbox-icon{
-    border-color: #188CE8;
-    background-color: #188CE8;
-    background-size: contain;
-    background-origin: border-box;
 
-    transition-property:color, background-color, box-shadow ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .checkbox-icon{
     display: flex;
     text-align: center;
@@ -218,6 +210,17 @@
     border:2px solid #000000;
     border-radius: 2px;
     cursor: pointer;
+        .checkbox:checked + &{
+        border-color: #188CE8;
+        background-color: #188CE8;
+        background-size: contain;
+        background-origin: border-box;
+
+        transition-property:color, background-color, box-shadow ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
 
 .btn-form{
@@ -247,10 +250,10 @@
 
     cursor: pointer;
     border: 1px solid transparent;
+        &:hover,
+        &:focus{
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
-.btn-form:hover,
-.btn-form:focus{
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
