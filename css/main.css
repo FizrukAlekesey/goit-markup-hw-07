@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+.header {
+  border: 1px solid #ECECEC;
+}
+
 .list {
   padding: 0;
   margin: 0;
